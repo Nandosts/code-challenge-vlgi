@@ -1,5 +1,14 @@
 # Svelte - TODO ✔
 
+## Introdução
+O [Grupo Sozo ](https://www.gruposozo.com.br/) é um grupo empresarial composto por diversas empresas do setor financeiro. Entre elas estão:
+A [VLG Investimentos](https://vlginvestimentos.com.br/), empresa credenciada à [XP](https://www.xpi.com.br/) e focada na assessoria de investimentos.
+O [Mercado em 1 Minuto](https://mercado1minuto.com.br/), focado no noticiário do setor. 
+A [VLG Seguros](https://vlgseguros.com/), focada em soluções para planejamento patrimonial, como Seguros e Previdência. E a [VLG Corporate](https://vlgcorporate.com.br/), focada em soluções financeiras personalizadas.
+
+Todas estas empresas precisam de uma ferramenta para se organizar quanto as atividades a serem feitas. Para isso iremos realizar a criação de um pequeno sistema para gerenciar o que precisar ser feito e o que ja foi feito.
+
+## Desafio 🎲
 O objetivo do projeto é reproduzir, parcialmente, o TODO do 👉[google keep](https://keep.google.com/),
 utilizando o framework web `Svelte` 👉 [https://svelte.dev/](https://svelte.dev/) e o framework de
 aplicativos `Ionic` 👉 [https://ionicframework.com/](https://ionicframework.com/).
