@@ -5,6 +5,8 @@
   import TodoApi from "../../TodoApi.js"
   
   import "./styles.scss";
+  import TodoItem from "../TodoItem/index.svelte";
+
   onMount(async () => {
     $tasks = await TodoApi.getAll();
   });
@@ -12,6 +14,6 @@
 
 <div class="todo-list">
   {#each $tasks as item (item)}
-    {JSON.stringify(item.id + ' ' + item.text)}
+    <TodoItem {...item} />
   {/each}
 </div>
