@@ -14,7 +14,7 @@
     $tasks = [
       {
         id: uuidv4(),
-        text: e.detail,
+        text: "",
         checked: false,
       },
       ...$tasks,
@@ -51,8 +51,8 @@
 </script>
 
 <div class="todo-list">
-  <NewItem on:newitem={handleNewItem} />
   {#each tasksSorted as item (item)}
-    <TodoItem {...item} on:update={handleUpdate} on:delete={handleDelete} />
+  <TodoItem {...item} on:update={handleUpdate} on:delete={handleDelete} />
   {/each}
+  <NewItem on:newitem={handleNewItem} />
 </div>
