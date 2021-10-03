@@ -1,0 +1,12 @@
+.add-item {
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.add-icon {
+  margin-right: 10px;
+  font-weight: 500;
+}
