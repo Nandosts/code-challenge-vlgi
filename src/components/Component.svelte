@@ -1,7 +1,14 @@
 <script lang="ts">
-  import "./Component.scss";
+  import { onMount } from "svelte";
   import { tasks } from "../stores.js";
-  console.log($tasks);
+  
+  import TodoApi from "../TodoApi.js"
+  
+  import "./Component.scss";
+  onMount(async () => {
+    $tasks = await TodoApi.getAll();
+    console.log($tasks)
+  });
 </script>
 
 <div class="container">
