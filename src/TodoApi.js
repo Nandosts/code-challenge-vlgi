@@ -4,6 +4,6 @@ export default class TodoApi {
   }
 
   static async save(tasks) {
-    localStorage.setItems("todo-list", JSON.stringify(tasks));
+    localStorage.setItem("todo-list", JSON.stringify(tasks));
   }
 }
