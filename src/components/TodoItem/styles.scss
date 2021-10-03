@@ -21,3 +21,14 @@
     text-decoration: line-through;
   }
 }
+
+.checked-box {
+  margin-right: 20px;
+}
+
+.delete-icon {
+  font-size: 1.6rem;
+  &:hover{
+    cursor: pointer;
+  }
+}
