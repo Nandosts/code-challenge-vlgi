@@ -15,7 +15,7 @@
   }
 </script>
 
-<ion-item class="todo-item" class:checked>
+<ion-item class="todo-item" lines="none" class:checked>
   <input
     type="checkbox"
     class="checked-box"
