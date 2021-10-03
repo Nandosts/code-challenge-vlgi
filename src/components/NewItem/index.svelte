@@ -12,8 +12,8 @@
   }
 </script>
 
-<span class="add-item" on:click={handleClick}>
+<ion-item class="add-item" on:click={handleClick}>
   <ion-icon name="add" class="add-icon" />
   Item da lista
-</span>
+</ion-item>
 

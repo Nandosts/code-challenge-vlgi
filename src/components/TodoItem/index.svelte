@@ -15,7 +15,7 @@
   }
 </script>
 
-<div class="todo-item" class:checked>
+<ion-item class="todo-item" class:checked>
   <input
     type="checkbox"
     class="checked-box"
@@ -33,4 +33,4 @@
   />
 
   <ion-icon name="close" class="delete-icon" on:click={handleClick} />
-</div>
+</ion-item>
