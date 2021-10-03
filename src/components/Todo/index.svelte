@@ -34,6 +34,17 @@
     TodoApi.save($tasks);
   }
 
+  let tasksSorted = [];
+
+  $: {
+    tasksSorted = [...$tasks];
+    tasksSorted.sort((a, b) => {
+      if(a.checked && b.checked) return 0;
+      if(a.checked) return 1;
+      if(b.checked) return -1;
+    });
+  }
+
   onMount(async () => {
     $tasks = await TodoApi.getAll();
   });
@@ -41,7 +52,7 @@
 
 <div class="todo-list">
   <NewItem on:newitem={handleNewItem} />
-  {#each $tasks as item (item)}
+  {#each tasksSorted as item (item)}
     <TodoItem {...item} on:update={handleUpdate} on:delete={handleDelete} />
   {/each}
 </div>
