@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Component from "src/components/Component.svelte";
+	import Todo from "src/components/Todo/index.svelte";
 </script>
 
 
-<Component />
+<Todo />
