@@ -26,7 +26,7 @@
   <input
     type="text"
     class="text-input"
-    bind-value={text}
+    bind:value={text}
     readonly={checked}
     on:keyup={({ key, target }) => key === "Enter" && target.blur()}
     on:blur={() => triggerUpdate()}
