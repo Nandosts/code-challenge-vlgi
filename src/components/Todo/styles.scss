@@ -4,4 +4,12 @@ h1 {
 
 .container {
   width: 500px;
+  height: 500px;
+}
+
+.todo-list {
+  height: auto;
+  max-height: 90vh;
+  max-width: 95vw;
+  overflow-y: auto;
 }

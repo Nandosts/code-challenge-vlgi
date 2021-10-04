@@ -1,13 +1,14 @@
 .todo-item {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 5px;
   background: #fff;
   
   .text-input {
     background: none;
     border: none;
     outline: none;
+    width: 30rem;
     
     font-size: 1rem;
     &:focus {
