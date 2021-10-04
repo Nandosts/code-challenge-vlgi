@@ -4,6 +4,8 @@ html {
 }
 
 .add-item {
+  font-family: Arial, Helvetica, sans-serif;
+
   font-size: 1.2rem;
   margin: 1rem 0 1.5rem 1.5rem;
   background: var(--bg);
@@ -20,10 +22,4 @@ html {
   color: var(--color-text);
   margin-right: 10px;
   font-weight: 500;
-}
-
-
-.item .item-content {
-  background: var(--bg) !important;
-  color: var(--color-text) !important;
 }
