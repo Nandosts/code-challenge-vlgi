@@ -7,6 +7,7 @@
   import TodoApi from "../../TodoApi.js";
 
   import "./styles.scss";
+  import SwitchTheme from "src/components/SwitchTheme/index.svelte";
   import TodoItem from "../TodoItem/index.svelte";
   import NewItem from "../NewItem/index.svelte";
 
@@ -39,9 +40,9 @@
   $: {
     tasksSorted = [...$tasks];
     tasksSorted.sort((a, b) => {
-      if(a.checked && b.checked) return 0;
-      if(a.checked) return 1;
-      if(b.checked) return -1;
+      if (a.checked && b.checked) return 0;
+      if (a.checked) return 1;
+      if (b.checked) return -1;
     });
   }
 
@@ -51,8 +52,9 @@
 </script>
 
 <ion-list class="todo-list">
+  <SwitchTheme />
   {#each tasksSorted as item (item)}
-  <TodoItem {...item} on:update={handleUpdate} on:delete={handleDelete} />
+    <TodoItem {...item} on:update={handleUpdate} on:delete={handleDelete} />
   {/each}
   <NewItem on:newitem={handleNewItem} />
 </ion-list>

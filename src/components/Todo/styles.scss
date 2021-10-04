@@ -1,3 +1,8 @@
+html {
+  --bg: #FCFCFC;
+  --color-text: #333;
+}
+
 h1 {
   font-size: 10rem;
 }
@@ -8,6 +13,9 @@ h1 {
 }
 
 .todo-list {
+  position: relative;
+  padding-top: 2.5rem;
+  background: var(--bg);
   height: auto;
   max-height: 90vh;
   max-width: 95vw;

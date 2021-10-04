@@ -1,16 +1,20 @@
 .todo-item {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 5px;
-  background: #fff;
-  
+  color: var(--color-text);
+  --ion-item-background: var(--bg) !important;
+
+
   .text-input {
     background: none;
     border: none;
     outline: none;
     width: 30rem;
-    
+
     font-size: 1rem;
+
     &:focus {
       text-decoration: underline;
     }
@@ -20,7 +24,7 @@
 
 .todo-item.checked {
   .text-input {
-    color: rgba(58, 58, 58, 0.672);
+    color: var(--color-text);
     text-decoration: line-through;
   }
 }
@@ -31,7 +35,9 @@
 
 .delete-icon {
   font-size: 1.6rem;
-  &:hover{
+  color: var(--color-text);
+
+  &:hover {
     cursor: pointer;
   }
 }
